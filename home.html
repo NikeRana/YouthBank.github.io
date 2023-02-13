@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Welcome to Youth Bank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #lock{
+            display:none;
+            position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgb(255,255,255) center no-repeat;
+    text-align:center;
+        }
+    </style>
+</head>
+
+<body style="background-color:#124559;">
+
+<div id="container">
+
+    <style>
+        .nav-link:hover {
+            text-decoration: underline;
+            color:#598392;
+        }
+
+        .mybtn {
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 10px #01161E;
+            border-radius: 30px;
+            background-color: white;
+            font-weight: bold;
+            color: #01161E;
+        }
+
+        .mybtn:active {
+            background-color: #01161E;
+            color: white;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg fixed fixed-top"
+        style="font-family:candara; font-size:18px; box-shadow: 0px 0px 10px 0px; background-color:#01161E; ">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:30%;">
+            <b>
+                <ul class="navbar-nav" style="background-color:#01161E; text-align: center;">
+                    <li class="nav-item nav-links" style="margin-left:15px;">
+                        <a class="nav-link active text-nowrap" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; ">
+                        <a class="nav-link text-nowrap" href="send_money">Transfer Money</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="all_cust">View All Customers</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px;">
+                        <a class="nav-link text-nowrap" href="transaction">Transactions</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:15px; margin-right:75px;">
+                        <a class="nav-link text-nowrap" href="about_us.html">About Us</a>
+                    </li>
+                </ul>
+            </b>
+        </div>
+    </nav>
+
+
+
+    <div class="container-large"
+        style="color:white; height:500px; width: 100%; padding:8% 2% 2% 2%; background-color:#124559;">
+        <div class="row">
+            <div class="col" style="margin-left: 5%;">
+                <br><br>&nbsp;<p class="zoomfont"
+                    style="font-size:0px; text-shadow:3px 3px 3px grey; text-align:center;"><b style="color:#F1E9D2">Welcome to <br> Youth
+                        Bank!</b></p>
+                    </div>
+        </div>
+    </div>
+   
+
+    
+    <script>
+        
+        $(document).ready(function () {
+
+            $(".zoomin").animate({
+                width: '400px'
+            }, '5000', 'linear');
+            $(".zoomfont").animate({
+                fontSize: '71px'
+            }, '5000', 'linear');
+        });
+    </script>
+
+</div>
+</body>
+
+</html>
